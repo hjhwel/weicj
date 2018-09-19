@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  height: 64px;
+  background-color: #999;
+}
+
+.swiper-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 64px;
+  bottom: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-slide:after{
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1rem;
+  height: 0.5rem;
+  margin-left: -0.5rem;
+  background: url(../images/xiangxia.png) no-repeat center center;
+  background-size: cover;
+  animation: ani 2s infinite ease-in-out;
+}
+@keyframes ani{
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.5;
+  }
+  60%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.view {
+  width: 6rem;
+  height: 10.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.cw {
+  color: #fff;
+}
+
+.page1 img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+h1 {
+  font-size: 0.78rem;
+  color: #40a5d1;
+  font-weight: normal;
+}
+
+.page1 p {
+  font-size: 0.4rem;
+  color: #636363;
+}
+
+.page-two,
+.page-fou {
+  background: url(../images/h5.jpg) no-repeat center center;
+  /* background-size: cover; */
+  font-size: 0.2rem;
+}
+
+.page-two .tc,
+.page-fou .tc {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.page-two div p,
+.page-fou div p {
+  line-height: 0.6rem;
+  text-align: left;
+  margin-top: 0.2rem;
+  color: #f0fafd;
+}
+
+.page-two>img {
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+}
+
+.page-two>img:nth-child(2) {
+  left: 0;
+}
+
+.page-two>img:nth-child(3) {
+  right: 0;
+}
+
+.page-sec .bg-top {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4;
+}
+
+.page-sec .bg-bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #414141;
+}
+
+.page3>div {
+  width: 100%;
+  height: 50%;
+}
+
+.page3 .page3-top {
+  background: url(../images/yanghongzhaopian.png) no-repeat right 0;
+  background-size: 50% 100%;
+}
+
+.page3-top {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page3-top h1 {
+  width: 0.8rem;
+  height: 5rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+
+.page3-top h3 {
+  width: 0.6rem;
+  height: 4.2rem;
+  font-size: 0.35rem;
+  font-weight: normal;
+  color: #3c97c8;
+  text-align: center;
+  margin-right: 0.2rem;
+}
+
+.page3-top h5 {
+  text-align: center;
+  font-weight: normal;
+  width: 0.45rem;
+  height: 4.2rem;
+  font-size: 0.45rem;
+  font-weight: normal;
+  color: #999;
+}
+
+.page3-bottom h5 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.45rem;
+  font-weight: normal;
+  color: #dedede;
+  text-align: left;
+  margin-top: 0.45rem;
+}
+
+.page3-bottom {
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  text-align: left;
+  color: #ccc;
+}
+
+.page3-bottom span {
+  color: #999;
+  margin-left: 0.08rem;
+}
+
+.page-fou {
+  background: url(../images/zhaopinbg.png) no-repeat center center;
+  /* background-size: cover; */
+}
+
+.page-fou .page4 .tc {
+  color: #dedede;
+}
+
+.page-fou .page4 p {
+  color: #faff70;
+  text-align: center;
+}
+
+.page-fou .page4 .p1 {
+  font-size: 0.6rem;
+  text-indent: 2em;
+  margin-top: 1rem;
+}
+
+.page-fou .page4 .p2 {
+  font-size: 0.42rem;
+  text-indent: -2em;
+}
+
+.page-fou .page4 .p2 span {
+  font-weight: bolder;
+}
+
+.page-fou .page4 .p3 {
+  font-size: 0.36rem;
+  text-indent: 2em;
+}
+
+.page-fou .page4 .p4 {
+  font-size: 0.31rem;
+  text-indent: -5em;
+  line-height: 0.35rem;
+}
+
+.page-fou .page4 .p5 {
+  font-size: 0.79rem;
+  font-weight: bold;
+  line-height: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.page-fou .page4 .yy {
+  text-align: left;
+  color: #dedede;
+  line-height: 0.5rem;
+}
+
+.page-fou .page4 .yy .cc {
+  text-align: right;
+}
+
+.page5 h1 {
+  font-size: 0.65rem;
+  color: #0087c1;
+}
+
+.page5 h5 {
+  font-size: 0.3rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.page5 img {
+  width: 100%;
+  margin: 0.6rem 0;
+}
+
+.page5 p {
+  font-size: 0.25rem;
+  line-height: 0.4rem;
+  color: #999;
+  text-align: left;
+  margin-bottom: 0.2rem;
+}
+
+.page-sev {
+  background: url(../images/liubg.png) no-repeat center center;
+  /* background-size: cover; */
+}
+
+.page6 h5 {
+  font-size: 0.38rem;
+  color: #dedede;
+}
+
+.page6 img {
+  width: 80%;
+}
+
+.page6 .im-mt {
+  margin-top: 0.5rem;
+}
+
+.page6 .im-mt9 {
+  margin-top: 0.8rem;
+}
+
+/*  */
+
+.page-8 .pic-area {
+  width: 100%;
+  height: 4rem;
+  position: relative;
+  margin: 0.2rem;
+}
+
+.page-8 p {
+  padding: 0 0.2rem;
+}
+
+.page-8 .pic-area img {
+  width: 25%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-8 .pic-area img:nth-of-type(1) {
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 30%;
+}
+
+.page-8 .pic-area img:nth-of-type(2) {
+  top: 0.8rem;
+  left: 2.8rem;
+  width: 30%;
+}
+
+.page-8 .pic-area img:nth-of-type(3) {
+  top: 2.5rem;
+  left: 4rem;
+}
+
+.page-8 .pic-area img:nth-of-type(4) {
+  top: 2.5rem;
+  left: 1.5rem;
+}
+
+.page-9 h5 {
+  color: #dedede;
+  font-size: 0.35rem;
+}
+
+.page-9 .page2 {
+  text-align: left;
+}
+
+.page-9 img {
+  height: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.page-9 .page2 p {
+  line-height: 0.45rem;
+  padding: 0 0.1rem;
+}
+
+.page-10 .page5 h5 {
+  margin-bottom: 0.5rem;
+}
+
+.page-10 .page5 div {
+  width: 100%;
+  padding: 0.4rem 0;
+}
+
+.page-10 .page5 div p {
+  line-height: 0.7rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.35rem;
+  color: #333;
+}
+
+.page-10 .page5 .y-bg {
+  position: relative;
+
+}
+
+.page-10 .page5 .y-bg .bg1 {
+  position: absolute;
+  width: 7.5rem;
+  background-color: #0f0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -3.75rem;
+  z-index: -1;
+  background: url(../images/h5.jpg) no-repeat center center;
+  /* background-size: cover; */
+}
+
+.page-10 .page5 .y-bg p {
+  color: #dedede;
+}
+
+.page-10 .page5 .w-bg p:nth-of-type(2) {
+  font-size: 0.25rem;
+}
+
+.page-10 .page5 .y-bg p:nth-of-type(2) {
+  font-size: 0.3rem;
+}
+
+.page-11 {
+  background: url(../images/shiyibg.png) no-repeat center center;
+  /* background-size: cover; */
+}
+
+.page-11 .page4 img {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.page-12 .page4 img {
+  width: 80%;
+  margin-top: 0;
+}
+
+.page-13 {
+  background: url(../images/shisanbg.png) no-repeat center center;
+  /* background-size: cover; */
+}
+.page-13 .page13 img{
+  margin-left: 0.35rem;
+}
